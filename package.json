@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npm install date-fns@3.6.0",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
