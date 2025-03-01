@@ -69,7 +69,7 @@ export function Header() {
                   <span className="sr-only">Account</span>
                 </Button>
               </Link>
-              {user.isAdmin && (
+              {user.is_admin && (
                 <Link href="/admin">
                   <Button variant="outline" size="sm">
                     Admin

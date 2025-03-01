@@ -15,12 +15,12 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const handleChange = (error: any) => {
+    const { name, value } = error.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -58,7 +58,7 @@ export default function ContactPage() {
               ].map(({ label, id, type, placeholder }) => (
                 <div key={id} className="space-y-2">
                   <Label htmlFor={id}>{label}</Label>
-                  <Input id={id} name={id} type={type} placeholder={placeholder} value={formData[id]} onChange={handleChange} required />
+                  {/* <Input id={id} name={id} type={type} placeholder={placeholder} value={formData[id]} onChange={handleChange} required /> */}
                 </div>
               ))}
               <div className="space-y-2">

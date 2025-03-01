@@ -59,7 +59,8 @@ export default async function Home() {
           </div>
           <div className="grid items-center justify-center grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
             {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <h1 className="text-center text-3xl font-bold">Coming soon...</h1>
+              // <ProductCard key={product.id} product={product} />
             ))}
           </div>
           <div className="flex justify-center mt-10">

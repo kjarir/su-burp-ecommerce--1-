@@ -3,7 +3,7 @@ export interface User {
   name: string
   phone_number: string
   password: string
-  is_admin: boolean
+  is_admin: false
   created_at: string
   updated_at: string
 }
